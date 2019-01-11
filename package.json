@@ -1,0 +1,46 @@
+{
+  "name": "jquery-plugin-c-share",
+  "version": "1.0.0",
+  "description": "A share to community buttons.",
+  "main": "dist/c-share.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "compress": "uglifyjs dist/c-share.js -o dist/c-share.min.js -c -m --comments /^!/",
+    "dev": "cross-env NODE_ENV=development rollup -c",
+    "release": "npm run build && npm run compress",
+    "watch": "rollup -c -w"
+  },
+  "author": "Chen-shin, Yang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycs77/jquery-plugin-c-share.git"
+  },
+  "homepage": "https://github.com/ycs77/jquery-plugin-c-share",
+  "bugs": {
+    "url": "https://github.com/ycs77/jquery-plugin-c-share/issues"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+    "share",
+    "share-buttons",
+    "community"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "change-case": "^3.0.2",
+    "create-banner": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "uglify-js": "^3.4.9"
+  },
+  "peerDependencies": {
+    "jquery": "^3.3.1"
+  }
+}

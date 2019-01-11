@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery plugin - C Share buttons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
+  <style>
+    header.jumbotron {
+      background-color: #ff266e;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 720px;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #303030;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="jumbotron jumbotron-fluid text-center">
+    <h1>jQuery plugin - C Share buttons</h1>
+
+    <div class="mt-5">
+      <a href="https://github.com/ycs77/jquery-plugin-c-share" class="btn btn-outline-light btn-lg">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+    </div>
+  </header>
+
+  <div class="container my-5 text-center">
+    <h2>Install:</h2>
+    
+    <div>
+      <pre><code class="bash">$ npm install jquery-plugin-c-share</code></pre>
+      <div>or</div>
+      <pre><code class="bash">$ yarn add jquery-plugin-c-share</code></pre>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center">Example:</h2>
+
+    <div class="my-5">
+      <div class="mb-3">
+        <div id="shareBlock"></div>
+      </div>
+
+      <pre><code class="js">$('#shareBlock').cShare({
+  description: 'jQuery plugin - C Share buttons',
+  show_buttons: [
+    'fb',
+    'gPlus',
+    'line'
+  ]
+});</code></pre>
+    </div>
+
+  <footer class="py-3 text-center">
+    <a href="https://github.com/yangchenshin77/jquery-plugin-bsModal">
+      <i class="fab fa-github mr-1"></i>
+      Github
+    </a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+  <script src="js/c-share.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+
+    $('#shareBlock').cShare({
+      description: 'jQuery plugin - C Share buttons...',
+      show_buttons: [
+        'fb',
+        'gPlus',
+        'line'
+      ]
+    });
+  </script>
+
+</body>
+</html>
