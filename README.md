@@ -10,7 +10,7 @@ https://ycs77.github.io/jquery-plugin-c-share/
 
 ## Getting started
 
-Must introduce jQuery 3, Font Awesome 5, Cropper.js.
+Must introduce jQuery 3, Font Awesome 5.
 
 ### Installation
 
