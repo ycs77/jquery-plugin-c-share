@@ -1,11 +1,11 @@
 /*!
- * c-share.js v1.0.0
+ * c-share.js v1.0.1
  * https://github.com/ycs77/jquery-plugin-c-share
  *
  * Copyright 2019 Chen-shin, Yang
  * Released under the MIT license
  *
- * Date: 2019-01-11T08:41:34.048Z
+ * Date: 2019-01-21T04:35:08.511Z
  */
 
 (function (global, factory) {

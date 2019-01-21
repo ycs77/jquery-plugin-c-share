@@ -1,6 +1,6 @@
 {
   "name": "jquery-plugin-c-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A share to community buttons.",
   "main": "dist/c-share.js",
   "scripts": {
