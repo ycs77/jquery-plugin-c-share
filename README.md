@@ -26,8 +26,8 @@ In browser:
 ```html
 <link  href="/path/to/fontawesome-5.css" rel="stylesheet"><!-- Font Awesome 5 is required -->
 
-<script src="/path/to/jquery.js"></script><!-- jQuery is required -->
-<script src="/path/to/bsModal.js"></script>
+<script src="/path/to/jquery.slim.js"></script><!-- jQuery is required -->
+<script src="/path/to/jquery.c-share.js"></script>
 ```
 
 ## Usage
