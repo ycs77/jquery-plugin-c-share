@@ -1,16 +1,16 @@
 {
   "name": "jquery-plugin-c-share",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A share to community buttons.",
-  "main": "dist/c-share.js",
+  "main": "dist/jquery.c-share.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "compress": "uglifyjs dist/c-share.js -o dist/c-share.min.js -c -m --comments /^!/",
+    "compress": "uglifyjs dist/jquery.c-share.js -o dist/c-share.min.js -c -m --comments /^!/",
     "dev": "cross-env NODE_ENV=development rollup -c",
     "release": "npm run build && npm run compress",
     "watch": "rollup -c -w"
   },
-  "author": "Chen-shin, Yang",
+  "author": "Lucas, Yang",
   "license": "MIT",
   "repository": {
     "type": "git",

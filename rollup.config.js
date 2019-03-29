@@ -3,7 +3,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import createBanner from 'create-banner'
 import pkg from './package.json'
 
-const name = pkg.name.replace('jquery-plugin-', '')
+const name = pkg.name.replace('-plugin-', '.')
 
 const banner = createBanner({
   data: {
