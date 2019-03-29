@@ -1,11 +1,11 @@
 {
   "name": "jquery-plugin-c-share",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A share to community buttons.",
   "main": "dist/jquery.c-share.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "compress": "uglifyjs dist/jquery.c-share.js -o dist/c-share.min.js -c -m --comments /^!/",
+    "compress": "uglifyjs dist/jquery.c-share.js -o dist/jquery.c-share.min.js -c -m --comments /^!/",
     "dev": "cross-env NODE_ENV=development rollup -c",
     "release": "npm run build && npm run compress",
     "watch": "rollup -c -w"
