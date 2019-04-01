@@ -5,7 +5,7 @@
  * Copyright 2019 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2019-04-01T15:09:27.893Z
+ * Date: 2019-04-01T15:13:39.573Z
  */
 
 (function (global, factory) {
@@ -21,7 +21,7 @@
 
       var defaults = {
         description: '',
-        show_buttons: ['fb', 'gPlus'],
+        showButtons: ['fb', 'gPlus'],
         data: {
           fb: {
             fa: 'fab fa-facebook-f',
@@ -98,7 +98,7 @@
           }
         },
         spacing: 6,
-        share_to_text: 'Share to'
+        shareToText: 'Share to'
       };
 
       var href = location.href.replace(/#\w/, '');
@@ -109,12 +109,12 @@
         settings.data = $.extend({}, defaults.data, options.data);
       }
 
-      settings.show_buttons.forEach(function (shareName) {
+      settings.showButtons.forEach(function (shareName) {
 
         var item = settings.data[shareName];
 
         // Create button element
-        _this.append('\n        <a href="' + item.href.call(null, href, settings.description) + '" title="' + settings.share_to_text + ' ' + item.name + '" target="_blank" data-icon="' + shareName + '">\n          <span class="fa-stack">\n            ' + (!item.hideWrapper ? '<i class="fas fa-circle fa-stack-2x"></i>' : '') + '\n            <i class="' + item.fa + ' fa-stack-1x"></i>\n          </span>\n        </a>\n      ');
+        _this.append('\n        <a href="' + item.href.call(null, href, settings.description) + '" title="' + settings.shareToText + ' ' + item.name + '" target="_blank" data-icon="' + shareName + '">\n          <span class="fa-stack">\n            ' + (!item.hideWrapper ? '<i class="fas fa-circle fa-stack-2x"></i>' : '') + '\n            <i class="' + item.fa + ' fa-stack-1x"></i>\n          </span>\n        </a>\n      ');
       });
 
       this.find('.fa-plurk').text('P');

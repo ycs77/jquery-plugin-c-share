@@ -4,7 +4,7 @@ if ($.fn) {
 
     let defaults = {
       description: '',
-      show_buttons: [
+      showButtons: [
         'fb',
         'gPlus'
       ],
@@ -95,7 +95,7 @@ if ($.fn) {
       settings.data = $.extend({}, defaults.data, options.data)
     }
 
-    settings.show_buttons.forEach((shareName) => {
+    settings.showButtons.forEach((shareName) => {
 
       let item = settings.data[shareName]
 

@@ -39,7 +39,7 @@ In browser:
 ```js
 $('#shareBlock').cShare({
   description: 'jQuery plugin - C Share buttons...',
-  show_buttons: [
+  showButtons: [
     'fb',
     'gPlus',
     'line'
@@ -57,7 +57,7 @@ $('#shareBlock').cShare({
 Define the share content texts.
 
 
-### show_buttons
+### showButtons
 
 * Type: `String`
 * Default: `Modal title`
