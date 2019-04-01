@@ -80,3 +80,10 @@ Define the share buttons data.
 
 Define the spacing.
 
+
+### shareToText
+
+* Type: `String`
+* Default: `Share to`
+
+Define the "Share to" text.

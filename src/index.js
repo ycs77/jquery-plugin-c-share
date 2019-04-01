@@ -83,7 +83,8 @@ if ($.fn) {
           show: false
         }
       },
-      spacing: 6
+      spacing: 6,
+      shareToText: 'Share to'
     }
 
     const href = location.href.replace(/#\w/, '')
@@ -100,7 +101,7 @@ if ($.fn) {
 
       // Create button element
       this.append(`
-        <a href="${item.href.call(null, href, settings.description)}" title="分享到 ${item.name}" target="_blank" data-icon="${shareName}">
+        <a href="${item.href.call(null, href, settings.description)}" title="${settings.shareToText} ${item.name}" target="_blank" data-icon="${shareName}">
           <span class="fa-stack">
             ${
               !item.hideWrapper

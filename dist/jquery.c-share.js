@@ -5,7 +5,7 @@
  * Copyright 2019 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2019-03-29T08:56:33.044Z
+ * Date: 2019-04-01T15:09:27.893Z
  */
 
 (function (global, factory) {
@@ -97,7 +97,8 @@
             show: false
           }
         },
-        spacing: 6
+        spacing: 6,
+        share_to_text: 'Share to'
       };
 
       var href = location.href.replace(/#\w/, '');
@@ -113,7 +114,7 @@
         var item = settings.data[shareName];
 
         // Create button element
-        _this.append('\n        <a href="' + item.href.call(null, href, settings.description) + '" title="\u5206\u4EAB\u5230 ' + item.name + '" target="_blank" data-icon="' + shareName + '">\n          <span class="fa-stack">\n            ' + (!item.hideWrapper ? '<i class="fas fa-circle fa-stack-2x"></i>' : '') + '\n            <i class="' + item.fa + ' fa-stack-1x"></i>\n          </span>\n        </a>\n      ');
+        _this.append('\n        <a href="' + item.href.call(null, href, settings.description) + '" title="' + settings.share_to_text + ' ' + item.name + '" target="_blank" data-icon="' + shareName + '">\n          <span class="fa-stack">\n            ' + (!item.hideWrapper ? '<i class="fas fa-circle fa-stack-2x"></i>' : '') + '\n            <i class="' + item.fa + ' fa-stack-1x"></i>\n          </span>\n        </a>\n      ');
       });
 
       this.find('.fa-plurk').text('P');
