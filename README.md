@@ -59,15 +59,15 @@ Define the share content texts.
 
 ### showButtons
 
-* Type: `String`
-* Default: `Modal title`
+* Type: `Array`
+* Default: `['fb', 'gPlus']`
 
-Define the show buttons.
+Define the show buttons. Can use values: `fb`, `gPlus`, `line`, `plurk`, `weibo`, `twitter`, `tumblr`, `pinterest`, `email`.
 
 
 ### data
 
-* Type: `String`
+* Type: `Object`
 * Default: [Source code](https://github.com/ycs77/jquery-plugin-c-share/blob/master/src/index.js)
 
 Define the share buttons data.
