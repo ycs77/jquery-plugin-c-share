@@ -4,6 +4,8 @@
 
 The share to community buttons.
 
+[Vue version](https://github.com/ycs77/vue-c-share)
+
 ## Example
 
 https://ycs77.github.io/jquery-plugin-c-share/
