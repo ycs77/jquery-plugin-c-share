@@ -8,7 +8,7 @@ const name = pkg.name.replace('-plugin-', '.')
 const banner = createBanner({
   data: {
     name: `${name}.js`,
-    year: '2019',
+    year: '2019-2020',
   },
 })
 
