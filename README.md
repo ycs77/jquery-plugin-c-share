@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/jquery-plugin-c-share.svg)](https://badge.fury.io/js/jquery-plugin-c-share)
 
-A share to community buttons.
+The share to community buttons.
 
 ## Example
 
