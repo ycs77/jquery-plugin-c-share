@@ -8,19 +8,20 @@ const name = pkg.name.replace('-plugin-', '.')
 const banner = createBanner({
   data: {
     name: `${name}.js`,
-    year: '2019-2020',
+    year: '2019-' + new Date().getFullYear(),
   },
 })
 
 export default {
   input: 'src/index.js',
+  external: ['jquery'],
   output: [
     {
       banner,
       file: `dist/${name}.js`,
       format: 'umd',
       globals: {
-        jquery: 'jQuery'
+        jquery: '$'
       }
     },
     {
@@ -28,7 +29,7 @@ export default {
       file: `docs/js/${name}.js`,
       format: 'umd',
       globals: {
-        jquery: 'jQuery'
+        jquery: '$'
       }
     }
   ],
