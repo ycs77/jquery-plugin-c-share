@@ -4,11 +4,11 @@
   "description": "The share to community buttons.",
   "main": "dist/jquery.c-share.js",
   "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -c",
+    "watch": "cross-env NODE_ENV=development rollup -c -w",
     "build": "cross-env NODE_ENV=production rollup -c",
     "compress": "uglifyjs dist/jquery.c-share.js -o dist/jquery.c-share.min.js -c -m --comments /^!/",
-    "dev": "cross-env NODE_ENV=development rollup -c",
-    "release": "npm run build && npm run compress",
-    "watch": "rollup -c -w"
+    "release": "npm run build && npm run compress"
   },
   "author": "Lucas, Yang",
   "license": "MIT",
