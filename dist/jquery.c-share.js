@@ -5,7 +5,7 @@
  * Copyright 2019-2020 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2020-10-19T07:31:40.080Z
+ * Date: 2020-10-19T07:45:02.240Z
  */
 
 (function (factory) {
@@ -19,7 +19,7 @@
 
       var defaults = {
         description: '',
-        showButtons: ['fb', 'gPlus'],
+        showButtons: ['line', 'fb', 'twitter'],
         data: {
           fb: {
             fa: 'fab fa-facebook-f',
@@ -29,19 +29,11 @@
             },
             show: true
           },
-          gPlus: {
-            fa: 'fab fa-google-plus-g',
-            name: 'Google+',
-            href: function href(url) {
-              return "https://plus.google.com/share?url=".concat(url);
-            },
-            show: true
-          },
           line: {
             fa: 'fab fa-line fa-2x',
             name: 'Line',
             href: function href(url) {
-              return "https://lineit.line.me/share/ui?url=".concat(url);
+              return "https://social-plugins.line.me/lineit/share?url=".concat(url);
             },
             show: true,
             hideWrapper: true
@@ -148,7 +140,6 @@
 
       this.find('.fa-stack-1x').css('color', '#ffffff');
       this.find('[data-icon=fb] .fa-stack-2x').css('color', '#3B5998');
-      this.find('[data-icon=gPlus] .fa-stack-2x').css('color', '#d73d32');
       this.find('[data-icon=line] .fa-stack-1x').css('color', '#00c300');
       this.find('[data-icon=plurk] .fa-stack-2x').css('color', '#cf682f');
       this.find('[data-icon=plurk] .fa-plurk').css({
