@@ -5,7 +5,7 @@
  * Copyright 2019-2020 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2020-10-19T07:27:47.324Z
+ * Date: 2020-10-19T07:31:40.080Z
  */
 
 (function (factory) {
@@ -98,7 +98,7 @@
         spacing: 6,
         shareToText: 'Share to'
       };
-      var href = location.href.replace(/#\w/, '');
+      var href = encodeURIComponent(location.href.replace(/#\w/, ''));
       var mobile = navigator.userAgent.match(/(mobile|android|pad)/i);
       var settings = $.extend({}, defaults, options);
 

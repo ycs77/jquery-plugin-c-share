@@ -87,7 +87,7 @@ if ($.fn) {
       shareToText: 'Share to'
     }
 
-    const href = location.href.replace(/#\w/, '')
+    const href = encodeURIComponent(location.href.replace(/#\w/, ''))
     const mobile = navigator.userAgent.match(/(mobile|android|pad)/i)
 
     let settings = $.extend({}, defaults, options)
