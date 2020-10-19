@@ -58,9 +58,9 @@ Define the share content texts.
 ### showButtons
 
 * Type: `Array`
-* Default: `['fb', 'gPlus']`
+* Default: `['line', 'fb', 'twitter']`
 
-Define the show buttons. Can use values: `fb`, `gPlus`, `line`, `plurk`, `weibo`, `twitter`, `tumblr`, `pinterest`, `email`.
+Define the show buttons. Can use values: `fb`, `line`, `plurk`, `weibo`, `twitter`, `tumblr`, `pinterest`, `email`.
 
 
 ### data

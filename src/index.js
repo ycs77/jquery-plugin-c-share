@@ -4,24 +4,13 @@ if ($.fn) {
 
     let defaults = {
       description: '',
-      showButtons: [
-        'fb',
-        'gPlus'
-      ],
+      showButtons: ['line', 'fb', 'twitter'],
       data: {
         fb: {
           fa: 'fab fa-facebook-f',
           name: 'Fb',
           href: (url) => {
             return `https://www.facebook.com/sharer.php?u=${url}`
-          },
-          show: true
-        },
-        gPlus: {
-          fa: 'fab fa-google-plus-g',
-          name: 'Google+',
-          href: (url) => {
-            return `https://plus.google.com/share?url=${url}`
           },
           show: true
         },
@@ -157,7 +146,6 @@ if ($.fn) {
     // Set color
     this.find('.fa-stack-1x').css('color', '#ffffff')
     this.find('[data-icon=fb] .fa-stack-2x').css('color', '#3B5998')
-    this.find('[data-icon=gPlus] .fa-stack-2x').css('color', '#d73d32')
     this.find('[data-icon=line] .fa-stack-1x').css('color', '#00c300')
     this.find('[data-icon=plurk] .fa-stack-2x').css('color', '#cf682f')
     this.find('[data-icon=plurk] .fa-plurk').css({
