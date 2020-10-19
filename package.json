@@ -29,17 +29,17 @@
     "community"
   ],
   "devDependencies": {
-    "@babel/core": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "change-case": "^4.1.1",
     "create-banner": "^1.0.0",
     "cross-env": "^7.0.2",
-    "rollup": "^2.0.6",
+    "rollup": "^2.32.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "uglify-js": "^3.8.0"
+    "uglify-js": "^3.11.3"
   },
   "peerDependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.1"
   }
 }
