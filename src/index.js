@@ -29,7 +29,7 @@ if ($.fn) {
           fa: 'fab fa-line fa-2x',
           name: 'Line',
           href: (url) => {
-            return `https://lineit.line.me/share/ui?url=${url}`
+            return `https://social-plugins.line.me/lineit/share?url=${url}`
           },
           show: true,
           hideWrapper: true
