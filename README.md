@@ -60,7 +60,7 @@ Define the share content texts.
 * Type: `Array`
 * Default: `['line', 'fb', 'twitter']`
 
-Define the show buttons. Can use values: `fb`, `line`, `plurk`, `weibo`, `twitter`, `tumblr`, `pinterest`, `email`.
+Define the show buttons. Can use values: `fb`, `line`, `plurk`, `weibo`, `twitter`, `tumblr`, `email`.
 
 
 ### data

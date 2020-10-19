@@ -55,14 +55,6 @@ if ($.fn) {
           },
           show: false
         },
-        pinterest: {
-          fa: 'fab fa-pinterest-p',
-          name: 'Pinterest',
-          href: (url, description) => {
-            return `http://pinterest.com/pin/create/button/?url=${url}&description=${description} ${url}`
-          },
-          show: false
-        },
         email: {
           fa: 'fas fa-envelope',
           name: 'E-mail',
@@ -156,7 +148,6 @@ if ($.fn) {
     this.find('[data-icon=weibo] .fa-stack-2x').css('color', '#F5CA59')
     this.find('[data-icon=twitter] .fa-stack-2x').css('color', '#2ba9e1')
     this.find('[data-icon=tumblr] .fa-stack-2x').css('color', '#35465d')
-    this.find('[data-icon=pinterest] .fa-stack-2x').css('color', '#EA1514')
     this.find('[data-icon=email] .fa-stack-2x').css('color', '#939598')
 
     return this;

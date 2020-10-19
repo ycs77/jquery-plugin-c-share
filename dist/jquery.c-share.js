@@ -5,7 +5,7 @@
  * Copyright 2019-2020 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2020-10-19T07:45:02.240Z
+ * Date: 2020-10-19T07:50:23.365Z
  */
 
 (function (factory) {
@@ -67,14 +67,6 @@
             name: 'Tumblr',
             href: function href(url, description) {
               return "http://www.tumblr.com/share/link?name=".concat(description, " ").concat(url, "&url=").concat(url);
-            },
-            show: false
-          },
-          pinterest: {
-            fa: 'fab fa-pinterest-p',
-            name: 'Pinterest',
-            href: function href(url, description) {
-              return "http://pinterest.com/pin/create/button/?url=".concat(url, "&description=").concat(description, " ").concat(url);
             },
             show: false
           },
@@ -150,7 +142,6 @@
       this.find('[data-icon=weibo] .fa-stack-2x').css('color', '#F5CA59');
       this.find('[data-icon=twitter] .fa-stack-2x').css('color', '#2ba9e1');
       this.find('[data-icon=tumblr] .fa-stack-2x').css('color', '#35465d');
-      this.find('[data-icon=pinterest] .fa-stack-2x').css('color', '#EA1514');
       this.find('[data-icon=email] .fa-stack-2x').css('color', '#939598');
       return this;
     };
