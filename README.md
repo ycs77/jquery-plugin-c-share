@@ -88,7 +88,7 @@ Define the "Share to" text.
 
 ## Sponsor
 
-If you think this package have helped you, can [Become a sponsor](https://www.patreon.com/ycs77) to support my work~ and can show your avatar on my open-source project README.
+If you think this package have helped you, can [Become a sponsor](https://www.patreon.com/ycs77) to support my work~ and your avatar will be visible on my major projects.
 
 ---
 
