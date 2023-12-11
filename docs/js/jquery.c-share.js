@@ -1,11 +1,11 @@
 /*!
- * jquery.c-share.js v1.2.0
+ * jquery.c-share.js v1.2.1
  * https://github.com/ycs77/jquery-plugin-c-share
  *
- * Copyright 2019-2020 Lucas, Yang
+ * Copyright 2019-2023 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2020-10-19T07:57:52.889Z
+ * Date: 2023-12-11T12:22:16.785Z
  */
 
 (function (factory) {
@@ -100,7 +100,7 @@
       this.find('a').click(function (e) {
         if (!mobile) {
           e.preventDefault();
-          window.open($(this).attr('href'), '_blank', 'height=600,width=500');
+          window.open($(this).attr('href'), '_blank', 'noopener,width=500,height=600');
         }
       }); // Add CSS
 
