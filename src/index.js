@@ -105,7 +105,7 @@ if ($.fn) {
         window.open(
           $(this).attr('href'),
           '_blank',
-          'height=600,width=500'
+          'noopener,width=500,height=600'
         )
       }
     })
