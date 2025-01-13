@@ -1,11 +1,11 @@
 /*!
- * jquery.c-share.js v1.2.1
+ * jquery.c-share.js v1.2.2
  * https://github.com/ycs77/jquery-plugin-c-share
  *
- * Copyright 2019-2023 Lucas, Yang
+ * Copyright 2019-2025 Lucas, Yang
  * Released under the MIT license
  *
- * Date: 2023-12-11T12:22:16.785Z
+ * Date: 2025-01-13T06:13:53.836Z
  */
 
 (function (factory) {
@@ -25,15 +25,15 @@
             fa: 'fab fa-facebook-f',
             name: 'Fb',
             href: function href(url) {
-              return "https://www.facebook.com/sharer.php?u=".concat(url);
+              return "https://www.facebook.com/sharer/sharer.php?u=".concat(url);
             },
             show: true
           },
           line: {
             fa: 'fab fa-line fa-2x',
             name: 'Line',
-            href: function href(url) {
-              return "https://social-plugins.line.me/lineit/share?url=".concat(url);
+            href: function href(url, description) {
+              return "https://social-plugins.line.me/lineit/share?url=".concat(url, "&text=").concat(description);
             },
             show: true,
             hideWrapper: true
