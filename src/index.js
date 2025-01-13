@@ -17,8 +17,8 @@ if ($.fn) {
         line: {
           fa: 'fab fa-line fa-2x',
           name: 'Line',
-          href: (url) => {
-            return `https://social-plugins.line.me/lineit/share?url=${url}`
+          href: (url, description) => {
+            return `https://social-plugins.line.me/lineit/share?url=${url}&text=${description}`
           },
           show: true,
           hideWrapper: true
