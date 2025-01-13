@@ -10,7 +10,7 @@ if ($.fn) {
           fa: 'fab fa-facebook-f',
           name: 'Fb',
           href: (url) => {
-            return `https://www.facebook.com/sharer.php?u=${url}`
+            return `https://www.facebook.com/sharer/sharer.php?u=${url}`
           },
           show: true
         },
